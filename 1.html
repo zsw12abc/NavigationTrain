@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Site Title -->
+    <title>领航培训| iOS Version</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Responsive HTML5 Theme in iOS Style" />
+    <meta name="keywords" content="responsive html5 theme, ios, android, material design, landing, application, mobile, blog, portfolio, bootstrap 3, css, jquery, flat, modern" />
+    <meta name="author" content="8Guild" />
+
+    <!-- Mobile Specific Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Theme Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" media="screen">
+
+    <!-- Preloader (Pace.js) -->
+    <script src="js/plugins/pace.min.js"></script>
+    
+    <!-- Modernizr -->
+    <script src="js/libs/modernizr.custom.js"></script>
+    <script src="js/libs/detectizr.min.js"></script>
+    
+  </head>
+  
+  <!-- Body -->
+  <body class="gray-bg">
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="logo">
+        <img src="img/logo-middle.png" alt="领航培训">
+        <span>领航培训</span>
+      </div>
+    </div>
+
+    <!-- Fake scrollbar (when open popups/modals) -->
+    <div class="fake-scrollbar"></div>
+
+    <!-- Off-canvas Navigation -->
+    <div class="offcanvas-nav">
+      <!-- Head (Fixed Part) -->
+      <div class="nav-head">
+        <div class="top-bar">
+          <div class="nav-toggle" data-offcanvas="close"><i class="flaticon-list26"></i></div>
+          <div class="social-buttons">
+            <a href="#" class="sb-twitter"><i class="bi-twitter"></i></a>
+            <a href="#" class="sb-google-plus"><i class="bi-gplus"></i></a>
+            <a href="#" class="sb-facebook"><i class="bi-facebook"></i></a>
+          </div>
+        </div>
+        <a href="index.html" class="offcanvas-logo">
+          <div class="icon"><img src="img/logo-big.png" alt="领航培训"></div>
+          <div class="title">
+            领航培训
+          </div>
+        </a>
+        <a href="http://train.linghang.education/wp-content/uploads/2015/08/IT.pdf" class="btn btn-ghost btn-light icon-left">下载报名表</a>
+      </div>
+      <!-- Body (Scroll Part) -->
+      
+    </div><!-- Off-canvas Navigation End -->
+
+    <!--Modal (Signin/Signup Page)-->
+    <div class="modal fade" id="signin-page">
+      <div class="modal-dialog">
+        <div class="container">
+          <div class="modal-form">
+            <div class="tab-content">
+              <!-- Sign in form -->
+              <form class="tab-pane transition scale fade in active" id="signin-form" autocomplete="off">
+                <h3 class="modal-title">Sign In</h3>
+                <div class="form-group space-top-2x">
+                  <label for="si_email" class="sr-only">Email</label>
+                  <input type="email" class="form-control" name="si_email" id="si_email" placeholder="Email" readonly onfocus="$(this).removeAttr('readonly');" required>
+                  <span class="error-label"></span>
+                  <span class="valid-label"></span>
+                </div>
+                <div class="form-group">
+                  <label for="si-password" class="sr-only">Password</label>
+                  <input type="password" class="form-control" name="si-password" id="si-password" placeholder="Password" readonly onfocus="$(this).removeAttr('readonly');" required>
+                  <a class="helper-link" href="#">Forgot password?</a>
+                  <span class="error-label"></span>
+                  <span class="valid-label"></span>
+                </div>
+                <label class="checkbox">
+                  <input type="checkbox"> Remember me
+                </label>
+                <div class="space-top-2x clearfix">
+                  <button type="button" class="btn-round btn-ghost btn-danger pull-left" data-dismiss="modal"><i class="flaticon-cross37"></i></button>
+                  <button type="submit" class="btn-round btn-ghost btn-success pull-right"><i class="flaticon-correct7"></i></button>
+                </div>
+                <!-- Switching forms (Fake nav tab) -->
+                <div class="form-switch helper-text space-top-2x">Don`t have an account? <a href="#form-1">Sign up for 领航培训</a></div>
+              </form>
+              <!-- Sign up form -->
+              <form class="tab-pane transition scale fade" id="signup-form">
+                <h3 class="modal-title">Sign Up</h3>
+                <div class="form-group space-top-2x">
+                  <label for="su-email" class="sr-only">Email</label>
+                  <input type="email" class="form-control" name="su-email" id="su-email" placeholder="Email" required>
+                  <span class="error-label"></span>
+                  <span class="valid-label"></span>
+                </div>
+                <div class="form-group">
+                  <label for="su-password" class="sr-only">Password</label>
+                  <input type="password" class="form-control" name="su-password" id="su-password" placeholder="Password" required>
+                  <span class="error-label"></span>
+                  <span class="valid-label"></span>
+                </div>
+                <div class="form-group">
+                  <label for="su-password-repeat" class="sr-only">Repeat password</label>
+                  <input type="password" class="form-control" name="su-password-repeat" id="su-password-repeat" placeholder="Repeat password" required>
+                  <span class="error-label"></span>
+                  <span class="valid-label"></span>
+                </div>
+                <label class="checkbox">
+                  <input type="checkbox"> Subscribe for our news
+                </label>
+                <div class="space-top-2x clearfix">
+                  <button type="button" class="btn-round btn-ghost btn-danger pull-left" data-dismiss="modal"><i class="flaticon-cross37"></i></button>
+                  <button type="submit" class="btn-round btn-ghost btn-success pull-right"><i class="flaticon-correct7"></i></button>
+                </div>
+                <!-- Switching forms (Fake nav tab) -->
+                <div class="form-switch helper-text space-top-2x">Already have an account? <a href="#form-2">Sign in</a></div>
+              </form>
+            </div>
+            <!-- Hidden real nav tabs -->
+            <ul class="nav-tabs hidden">
+              <li id="form-1"><a href="#signup-form" data-toggle="tab">Sign up</a></li>
+              <li id="form-2"><a href="#signin-form" data-toggle="tab">Sign in</a></li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- Navbar -->
+    <header class="navbar navbar-fixed-top">
+      <div class="container">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+          <img src="img/logo-small.png" alt="领航培训">
+          领航培训
+        </a>
+        <!-- Social Buttons -->
+        <div class="social-buttons">
+          <a href="#" class="sb-twitter"><i class="bi-twitter"></i></a>
+          <a href="#" class="sb-google-plus"><i class="bi-gplus"></i></a>
+          <a href="#" class="sb-facebook"><i class="bi-facebook"></i></a>
+        </div>
+        <!-- Toolbar -->
+        <div class="toolbar">
+          <a href="http://train.linghang.education/wp-content/uploads/2015/08/IT.pdf" class="btn btn-ghost btn-primary icon-left">下载报名表</a>
+          <div class="nav-toggle" data-offcanvas="open"><i class="flaticon-list26"></i></div>
+        </div>
+      </div>
+    </header><!-- Navbar End -->
+
+    <!-- Page Heading -->
+    
+    
+    <!-- Single Post -->
+    <section class="space-top padding-bottom">
+      <div class="container">
+        <div class="row">
+
+          <!-- Post Content -->
+          <div class="col-lg-12 padding-bottom">
+            <h1></h1>
+            <div class="row">
+              <div class="col-md-9">
+                <p>我是swinburn 的本科毕业生， 电子专业的。 毕业之后， 我找到了一家实习， 可是实习并没有把我留下来。 这个时候女朋友正好也要和我分手。 虽然觉得是她不懂我， 但是也给了我很大的动力。</p>  
+
+<p>我有一个姐姐也在澳洲， 她一直建议我， 刚毕业的话， 就到处玩一会。 家里也不缺钱。 等像她工作起来， 就没有时间到处走了。   可是我的工作还没有着落， 身边的同学都也找到了兼职啊， 各种找工作。我也不能坐吃山空。 所以我自己也特别着急。   姐姐一直安慰我说， 我长的这么壮， 这么帅。 干什么都行。  我突然想到了我可以去搬砖。 澳洲搬砖不是很赚钱么。   </p>
+
+<p>一次和姐姐去参加活动， 活动的时候碰到一个程序员，姐姐朋友。 他年薪90000， 而且还每年都有增加。 我听了之后， 这个数字深深的在我脑子里印上了。 我回家之后立马开始寻找培训班。 </p>
+
+<p>发现墨尔本IT培训机构特别少， 我只咨询了几家。 领航给我的感觉挺好的。 老师特别细心 ， 他们准备的材料， 课程设置， 也特别紧凑。  感觉靠谱。 如果这么一套学习下来， 应该不会学不到东西吧。  我和姐姐商量了一下， 就报了班。  </p>
+
+<p>刚开始上课是hello world 之类的。  第一个月学3天休息1－2天， 我觉得不难。 大学有一些编程基础， 跟上对我来说没问题。 有时候班上的同学会的比我多， 我也觉得挺有压力的。</p>
+
+<p>班上同学很多都是朋友推荐过来的， 他们的朋友都找到了不错的工作。 听了特别开心， 我凭借努力应该最后也可以吧。 班上同学相处的很好， 大学都没有这个感受， 大家一起上课， 一起吃饭， 一起分享， 一起做游戏。 这段日子过的特别有意义和开心。 </p>
+
+<p>我是等到毕业前1个周才开始关心面试的问题。 有点晚。认真学了面试的技巧之后，   我只去了一家个人小企业，我只要5K每个月。 当场就给offer了。。 我有种创世纪的感觉。 </p>
+
+<p>领航教育作为培训机构， 我觉得做的真心挺好的。 市场上推的不是很厉害， 但是老师的工资给的却很高。 这也是为什么他们能留住好老师吧。 希望领航越办越好。 </p>
+
+<p>最后想说， 感谢操心的教务， 感谢tutor张老师， 也感谢前台小美女。 
+
+
+</p>
+                
+              </div>
+    
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </section><!-- Single Post End -->
+
+    <!-- Footer -->
+    
+    
+    <!-- Javascript (jQuery) Libraries and Plugins -->
+    <script src="js/libs/jquery-2.1.3.min.js"></script>
+    <script src="js/libs/jquery.easing.1.3.js"></script>
+    <script src="js/plugins/velocity.min.js"></script>
+    <script src="js/plugins/bootstrap.min.js"></script>
+    <script src="js/plugins/smoothscroll.js"></script>
+    <script src="js/plugins/form-plugins.js"></script>
+    <script src="js/plugins/jquery.mCustomScrollbar.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+  </body><!-- Body End-->
+</html>

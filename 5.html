@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Site Title -->
+    <title>领航培训| iOS Version</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Responsive HTML5 Theme in iOS Style" />
+    <meta name="keywords" content="responsive html5 theme, ios, android, material design, landing, application, mobile, blog, portfolio, bootstrap 3, css, jquery, flat, modern" />
+    <meta name="author" content="8Guild" />
+
+    <!-- Mobile Specific Meta Tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Theme Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" media="screen">
+
+    <!-- Preloader (Pace.js) -->
+    <script src="js/plugins/pace.min.js"></script>
+    
+    <!-- Modernizr -->
+    <script src="js/libs/modernizr.custom.js"></script>
+    <script src="js/libs/detectizr.min.js"></script>
+    
+  </head>
+  
+  <!-- Body -->
+  <body class="gray-bg">
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="logo">
+        <img src="img/logo-middle.png" alt="领航培训">
+        <span>领航培训</span>
+      </div>
+    </div>
+
+    <!-- Fake scrollbar (when open popups/modals) -->
+    <div class="fake-scrollbar"></div>
+
+    <!-- Off-canvas Navigation -->
+    <div class="offcanvas-nav">
+      <!-- Head (Fixed Part) -->
+      <div class="nav-head">
+        <div class="top-bar">
+          <div class="nav-toggle" data-offcanvas="close"><i class="flaticon-list26"></i></div>
+          <div class="social-buttons">
+            <a href="#" class="sb-twitter"><i class="bi-twitter"></i></a>
+            <a href="#" class="sb-google-plus"><i class="bi-gplus"></i></a>
+            <a href="#" class="sb-facebook"><i class="bi-facebook"></i></a>
+          </div>
+        </div>
+        <a href="index.html" class="offcanvas-logo">
+          <div class="icon"><img src="img/logo-big.png" alt="领航培训"></div>
+          <div class="title">
+            领航培训
+          </div>
+        </a>
+        <a href="http://train.linghang.education/wp-content/uploads/2015/08/IT.pdf" class="btn btn-ghost btn-light icon-left">下载报名表</a>
+      </div>
+      <!-- Body (Scroll Part) -->
+      
+    </div><!-- Off-canvas Navigation End -->
+
+    <!--Modal (Signin/Signup Page)-->
+    <div class="modal fade" id="signin-page">
+      <div class="modal-dialog">
+        <div class="container">
+          <div class="modal-form">
+            <div class="tab-content">
+              <!-- Sign in form -->
+              <form class="tab-pane transition scale fade in active" id="signin-form" autocomplete="off">
+                <h3 class="modal-title">Sign In</h3>
+                <div class="form-group space-top-2x">
+                  <label for="si_email" class="sr-only">Email</label>
+                  <input type="email" class="form-control" name="si_email" id="si_email" placeholder="Email" readonly onfocus="$(this).removeAttr('readonly');" required>
+                  <span class="error-label"></span>
+                  <span class="valid-label"></span>
+                </div>
+                <div class="form-group">
+                  <label for="si-password" class="sr-only">Password</label>
+                  <input type="password" class="form-control" name="si-password" id="si-password" placeholder="Password" readonly onfocus="$(this).removeAttr('readonly');" required>
+                  <a class="helper-link" href="#">Forgot password?</a>
+                  <span class="error-label"></span>
+                  <span class="valid-label"></span>
+                </div>
+                <label class="checkbox">
+                  <input type="checkbox"> Remember me
+                </label>
+                <div class="space-top-2x clearfix">
+                  <button type="button" class="btn-round btn-ghost btn-danger pull-left" data-dismiss="modal"><i class="flaticon-cross37"></i></button>
+                  <button type="submit" class="btn-round btn-ghost btn-success pull-right"><i class="flaticon-correct7"></i></button>
+                </div>
+                <!-- Switching forms (Fake nav tab) -->
+                <div class="form-switch helper-text space-top-2x">Don`t have an account? <a href="#form-1">Sign up for 领航培训</a></div>
+              </form>
+              <!-- Sign up form -->
+              <form class="tab-pane transition scale fade" id="signup-form">
+                <h3 class="modal-title">Sign Up</h3>
+                <div class="form-group space-top-2x">
+                  <label for="su-email" class="sr-only">Email</label>
+                  <input type="email" class="form-control" name="su-email" id="su-email" placeholder="Email" required>
+                  <span class="error-label"></span>
+                  <span class="valid-label"></span>
+                </div>
+                <div class="form-group">
+                  <label for="su-password" class="sr-only">Password</label>
+                  <input type="password" class="form-control" name="su-password" id="su-password" placeholder="Password" required>
+                  <span class="error-label"></span>
+                  <span class="valid-label"></span>
+                </div>
+                <div class="form-group">
+                  <label for="su-password-repeat" class="sr-only">Repeat password</label>
+                  <input type="password" class="form-control" name="su-password-repeat" id="su-password-repeat" placeholder="Repeat password" required>
+                  <span class="error-label"></span>
+                  <span class="valid-label"></span>
+                </div>
+                <label class="checkbox">
+                  <input type="checkbox"> Subscribe for our news
+                </label>
+                <div class="space-top-2x clearfix">
+                  <button type="button" class="btn-round btn-ghost btn-danger pull-left" data-dismiss="modal"><i class="flaticon-cross37"></i></button>
+                  <button type="submit" class="btn-round btn-ghost btn-success pull-right"><i class="flaticon-correct7"></i></button>
+                </div>
+                <!-- Switching forms (Fake nav tab) -->
+                <div class="form-switch helper-text space-top-2x">Already have an account? <a href="#form-2">Sign in</a></div>
+              </form>
+            </div>
+            <!-- Hidden real nav tabs -->
+            <ul class="nav-tabs hidden">
+              <li id="form-1"><a href="#signup-form" data-toggle="tab">Sign up</a></li>
+              <li id="form-2"><a href="#signin-form" data-toggle="tab">Sign in</a></li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <!-- Navbar -->
+    <header class="navbar navbar-fixed-top">
+      <div class="container">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+          <img src="img/logo-small.png" alt="领航培训">
+          领航培训
+        </a>
+        <!-- Social Buttons -->
+        <div class="social-buttons">
+          <a href="#" class="sb-twitter"><i class="bi-twitter"></i></a>
+          <a href="#" class="sb-google-plus"><i class="bi-gplus"></i></a>
+          <a href="#" class="sb-facebook"><i class="bi-facebook"></i></a>
+        </div>
+        <!-- Toolbar -->
+        <div class="toolbar">
+          <a href="http://train.linghang.education/wp-content/uploads/2015/08/IT.pdf" class="btn btn-ghost btn-primary icon-left">下载报名表</a>
+          <div class="nav-toggle" data-offcanvas="open"><i class="flaticon-list26"></i></div>
+        </div>
+      </div>
+    </header><!-- Navbar End -->
+
+    <!-- Page Heading -->
+    
+    
+    <!-- Single Post -->
+    <section class="space-top padding-bottom">
+      <div class="container">
+        <div class="row">
+
+          <!-- Post Content -->
+          <div class="col-lg-12 padding-bottom">
+            <h1></h1>
+            <div class="row">
+              <div class="col-md-9">
+                <p>来领航教育之前，我仅仅是一名只会最基础操作的网页编写人员，在公司地位非常低，非常自卑。刚刚进公司的时候，我经常被老板派去干一些杂活，因为我的专业技能并不是很强，相比公司其他特别专业的同事，我显得特别的微不足道不引人重视。</p>
+
+ <p>刚开始上班的一个月，每天心情都特别低落，什么都学不到，昏昏度日。我知道是因为我自身水平还不够，老板不放心交给我做重要的项目。所以每天下班之后我选择继续敲代码，不断的提高和练习。我一直觉得自己在工作中便可以得到很大的提高，有前辈的指点，有同辈的帮助……但是我错了,每个人都忙忙碌碌，根本没有闲心来教你。同时，公司没有给我相应的时间来学习，只是希望我能立刻成为一名优秀的专业的网站编写人员。之后我深深的明白了没有实力就没有地位的道理，所以我下定决心要进一步深造，改变自己。</p>
+
+ <p>其实我很早之前就听说过领航教育，是因为我朋友之前就是从那毕业的。后来我又打电话到领航仔细地询问了相应的课程和授课老师之后，我打算去那里试试。本来我对自己是很没有信心的，怕上课跟不上，怕老师布置的作业完成得不够好等等。但是来到领航后，张老师对我们非常的亲切热心，而且讲课也特别幽默风趣、通俗易懂。这才让我那颗忐忑的心逐渐安稳下来。其实我是个特别害羞的人，以前不太喜欢跟同学交流，即使遇到不会的问题也是宁可自己憋着钻研。但是从来领航之后，每次上课张老师都会鼓励我们积极讨论，轮流发言。这给了我很大的锻炼机会，我逐渐放开了自己，渐渐地愿意表达自己的内心想法了，也愿意与大家交流技术问题了。同时，我有什么不懂的问题也喜欢向老师请教了。张老师每次都讲解的特别详细，也非常有耐心。经过短短的三周学习之后我发现，我变得开朗了，我的专业技术也提高了很多！我真心的想说：不管多么内向的人，在领航待久了心里都会渐渐阳光起来。不管专业技术多么薄弱的人，就算你是零基础，领航的老师也会从一点一滴教起。</p>
+我其实很遗憾没有早点来领航，没有早点认识这里的同学和老师。不过庆幸的是，我没有放弃自己，终于遇到你，领航教育！
+
+</p>
+                
+              </div>
+    
+            </div>
+           
+          </div>
+        </div>
+      </div>
+    </section><!-- Single Post End -->
+
+    <!-- Footer -->
+    
+    
+    <!-- Javascript (jQuery) Libraries and Plugins -->
+    <script src="js/libs/jquery-2.1.3.min.js"></script>
+    <script src="js/libs/jquery.easing.1.3.js"></script>
+    <script src="js/plugins/velocity.min.js"></script>
+    <script src="js/plugins/bootstrap.min.js"></script>
+    <script src="js/plugins/smoothscroll.js"></script>
+    <script src="js/plugins/form-plugins.js"></script>
+    <script src="js/plugins/jquery.mCustomScrollbar.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+  </body><!-- Body End-->
+</html>
