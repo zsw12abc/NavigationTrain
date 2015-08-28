@@ -1,11 +1,10 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
 
+<head>
+    <meta charset="utf-8">
     <!-- Site Title -->
     <title>领航教给我怎样才算奋斗 | 领航培训</title>
-
     <meta name="title" content="领航教给我怎样才算奋斗 | 领航培训" itemprop="name">
     <meta name="description" content="领航就业培训, 贴心为你量身打造, 挑战7万年薪,成就巅峰人生." />
     <meta name="keywords" content="领航, 教育, 墨尔本, 就业, 培训, iOS, Swift, PHP, SQL" />
@@ -41,206 +40,102 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/img/logo/logo_144.png" itemprop="image">
     <meta name="theme-color" content="#ffffff">
-
     <!-- Favicon Icon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-
     <!-- Theme Stylesheet -->
     <link href="css/style.css" rel="stylesheet" media="screen">
-
     <!-- Preloader (Pace.js) -->
     <script src="js/plugins/pace.min.js"></script>
-    
     <!-- Modernizr -->
     <script src="js/libs/modernizr.custom.js"></script>
     <script src="js/libs/detectizr.min.js"></script>
-    
-  </head>
-  
-  <!-- Body -->
-  <body class="gray-bg">
+</head>
+<!-- Body -->
 
+<body class="gray-bg">
     <!-- Preloader -->
     <div id="preloader">
-      <div class="logo">
-        <img src="img/logo-middle.png" alt="领航培训">
-        <span>领航培训</span>
-      </div>
+        <div class="logo">
+            <img src="img/logo-middle.png" alt="领航培训">
+            <span>领航培训</span>
+        </div>
     </div>
-
     <!-- Fake scrollbar (when open popups/modals) -->
     <div class="fake-scrollbar"></div>
-
     <!-- Off-canvas Navigation -->
     <div class="offcanvas-nav">
-      <!-- Head (Fixed Part) -->
-      <div class="nav-head">
-        <div class="top-bar">
-          <div class="nav-toggle" data-offcanvas="close"><i class="flaticon-list26"></i></div>
-          <div class="social-buttons">
-            <a href="#" class="sb-twitter"><i class="bi-twitter"></i></a>
-            <a href="#" class="sb-google-plus"><i class="bi-gplus"></i></a>
-            <a href="#" class="sb-facebook"><i class="bi-facebook"></i></a>
-          </div>
-        </div>
-        <a href="index.html" class="offcanvas-logo">
-          <div class="icon"><img src="img/logo-big.png" alt="领航培训"></div>
-          <div class="title">
-            领航培训
-          </div>
-        </a>
-        <a href="http://train.linghang.education/wp-content/uploads/2015/08/IT.pdf" class="btn btn-ghost btn-light icon-left">下载报名表</a>
-      </div>
-      <!-- Body (Scroll Part) -->
-      
-    </div><!-- Off-canvas Navigation End -->
-
-    <!--Modal (Signin/Signup Page)-->
-    <div class="modal fade" id="signin-page">
-      <div class="modal-dialog">
-        <div class="container">
-          <div class="modal-form">
-            <div class="tab-content">
-              <!-- Sign in form -->
-              <form class="tab-pane transition scale fade in active" id="signin-form" autocomplete="off">
-                <h3 class="modal-title">Sign In</h3>
-                <div class="form-group space-top-2x">
-                  <label for="si_email" class="sr-only">Email</label>
-                  <input type="email" class="form-control" name="si_email" id="si_email" placeholder="Email" readonly onfocus="$(this).removeAttr('readonly');" required>
-                  <span class="error-label"></span>
-                  <span class="valid-label"></span>
+        <!-- Head (Fixed Part) -->
+        <div class="nav-head">
+            <div class="top-bar">
+                <div class="nav-toggle" data-offcanvas="close"><i class="flaticon-list26"></i></div>
+                <div class="social-buttons">
+                    <a href="https://instagram.com/linghang_mel/" class="sb-instagram"><i class="bi-instagram"></i></a>
+                    <a href="http://www.weibo.com/u/3108466477" class="sb-weibo"><i class="bi-weibo"></i></a>
+                    <a href="https://www.facebook.com/pages/领航教育/405307569661058" class="sb-facebook"><i class="bi-facebook"></i></a>
                 </div>
-                <div class="form-group">
-                  <label for="si-password" class="sr-only">Password</label>
-                  <input type="password" class="form-control" name="si-password" id="si-password" placeholder="Password" readonly onfocus="$(this).removeAttr('readonly');" required>
-                  <a class="helper-link" href="#">Forgot password?</a>
-                  <span class="error-label"></span>
-                  <span class="valid-label"></span>
-                </div>
-                <label class="checkbox">
-                  <input type="checkbox"> Remember me
-                </label>
-                <div class="space-top-2x clearfix">
-                  <button type="button" class="btn-round btn-ghost btn-danger pull-left" data-dismiss="modal"><i class="flaticon-cross37"></i></button>
-                  <button type="submit" class="btn-round btn-ghost btn-success pull-right"><i class="flaticon-correct7"></i></button>
-                </div>
-                <!-- Switching forms (Fake nav tab) -->
-                <div class="form-switch helper-text space-top-2x">Don`t have an account? <a href="#form-1">Sign up for 领航培训</a></div>
-              </form>
-              <!-- Sign up form -->
-              <form class="tab-pane transition scale fade" id="signup-form">
-                <h3 class="modal-title">Sign Up</h3>
-                <div class="form-group space-top-2x">
-                  <label for="su-email" class="sr-only">Email</label>
-                  <input type="email" class="form-control" name="su-email" id="su-email" placeholder="Email" required>
-                  <span class="error-label"></span>
-                  <span class="valid-label"></span>
-                </div>
-                <div class="form-group">
-                  <label for="su-password" class="sr-only">Password</label>
-                  <input type="password" class="form-control" name="su-password" id="su-password" placeholder="Password" required>
-                  <span class="error-label"></span>
-                  <span class="valid-label"></span>
-                </div>
-                <div class="form-group">
-                  <label for="su-password-repeat" class="sr-only">Repeat password</label>
-                  <input type="password" class="form-control" name="su-password-repeat" id="su-password-repeat" placeholder="Repeat password" required>
-                  <span class="error-label"></span>
-                  <span class="valid-label"></span>
-                </div>
-                <label class="checkbox">
-                  <input type="checkbox"> Subscribe for our news
-                </label>
-                <div class="space-top-2x clearfix">
-                  <button type="button" class="btn-round btn-ghost btn-danger pull-left" data-dismiss="modal"><i class="flaticon-cross37"></i></button>
-                  <button type="submit" class="btn-round btn-ghost btn-success pull-right"><i class="flaticon-correct7"></i></button>
-                </div>
-                <!-- Switching forms (Fake nav tab) -->
-                <div class="form-switch helper-text space-top-2x">Already have an account? <a href="#form-2">Sign in</a></div>
-              </form>
             </div>
-            <!-- Hidden real nav tabs -->
-            <ul class="nav-tabs hidden">
-              <li id="form-1"><a href="#signup-form" data-toggle="tab">Sign up</a></li>
-              <li id="form-2"><a href="#signin-form" data-toggle="tab">Sign in</a></li>
-            </ul>
-          </div>
+            <a href="index.html" class="offcanvas-logo">
+                <div class="icon"><img src="img/logo-big.png" alt="领航培训"></div>
+                <div class="title">
+                    领航培训
+                </div>
+            </a>
+            <a href="http://train.linghang.education/wp-content/uploads/2015/08/IT.pdf" class="btn btn-ghost btn-light icon-left">下载报名表</a>
         </div>
-      </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
+        <!-- Body (Scroll Part) -->
+    </div>
+    <!-- Off-canvas Navigation End -->
+    <!--Modal (Signin/Signup Page)-->
     <!-- Navbar -->
     <header class="navbar navbar-fixed-top">
-      <div class="container">
-        <!-- Logo -->
-        <a href="index.html" class="logo">
-          <img src="img/logo-small.png" alt="领航培训">
-          领航培训
-        </a>
-        <!-- Social Buttons -->
-        <div class="social-buttons">
-          <a href="#" class="sb-twitter"><i class="bi-twitter"></i></a>
-          <a href="#" class="sb-google-plus"><i class="bi-gplus"></i></a>
-          <a href="#" class="sb-facebook"><i class="bi-facebook"></i></a>
+        <div class="container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <img src="img/logo-small.png" alt="领航培训"> 领航培训
+            </a>
+            <!-- Social Buttons -->
+            <div class="social-buttons">
+                <a href="https://instagram.com/linghang_mel/" class="sb-instagram"><i class="bi-instagram"></i></a>
+                <a href="http://www.weibo.com/u/3108466477" class="sb-weibo"><i class="bi-weibo"></i></a>
+                <a href="https://www.facebook.com/pages/领航教育/405307569661058" class="sb-facebook"><i class="bi-facebook"></i></a>
+            </div>
+            <!-- Toolbar -->
+            <div class="toolbar">
+                <a href="http://train.linghang.education/wp-content/uploads/2015/08/IT.pdf" class="btn btn-ghost btn-primary icon-left">下载报名表</a>
+                <div class="nav-toggle" data-offcanvas="open"><i class="flaticon-list26"></i></div>
+            </div>
         </div>
-        <!-- Toolbar -->
-        <div class="toolbar">
-          <a href="http://train.linghang.education/wp-content/uploads/2015/08/IT.pdf" class="btn btn-ghost btn-primary icon-left">下载报名表</a>
-          <div class="nav-toggle" data-offcanvas="open"><i class="flaticon-list26"></i></div>
-        </div>
-      </div>
-    </header><!-- Navbar End -->
-
+    </header>
+    <!-- Navbar End -->
     <!-- Page Heading -->
-    
-    
     <!-- Single Post -->
     <section class="space-top padding-bottom">
-      <div class="container">
-        <div class="row">
-
-          <!-- Post Content -->
-          <div class="col-lg-12 padding-bottom">
-            <h1>领航教给我怎样才算奋斗</h1>
+        <div class="container">
             <div class="row">
-              <div class="col-md-9">
-                <p>很多人问我， 领航哪点吸引我。  我会说， 在那段日子里， 当所有机会对你say no， 但是坚信领航能帮助我找到出路， 所有的人都为了一个梦想， 付出行动。 那种感觉特别带劲。  也另我着迷。 </p>
-
-<p>我想参加领航是因为教课的老师， 我之前搜索到他的讲课内容， 那个时候我已经工作了，偶尔下班之后看看他的材料，  他都或多或少帮助我解决工作中遇到的问题。 就感觉还没进入领航， 就已经觉得这个老师对我帮助很大。 </p>
-
-<p>上班时间紧，根本没有时间学习， 也特别懈怠， 然后就喜欢看老师的材料， 网站， 看其它人的评论， 每次看完， 都像打鸡血一样， 充满战斗力。 真的是我吸取能量的地方。  </p>
-
-<p>所以我就辞职了， 毅然参加领航。 想为自己的将来找一个更好的出路。 提高自己的技术。 也许也只有工作了之后， 才真正知道自己需要什么， 想获得什么。  </p>
-
-<p>进了领航， 我每天特别开心。 感觉花的钱也特别值得。 老师对待学生特别有耐心， 肯教。 并且老师自己技术够硬， 他们自己都是大公司里面的IT技术人员。  再有就是学生， 积极向上，都肯吃苦。 不过领航真的会把上课不认真的同学劝退。</p>
-
-<p>我特别喜欢这里的老师， 他们很抓学生上课的感觉， 如果大家懈怠， 老师会停下来， 给大家讲讲幽默的故事， 调节一下气氛， 保证每个人都知道自己正在做的事情。 也可能是我的偶像， 所以有点偏袒。 但是其他人也有同感， 老师很负责任。 每天都会让我们自己给自己定计划， 写进度。 并且善良的张老师， 课后tutorial都是陪着我们一起学， 不懂的就问他。 解决了很多当下不懂的难题。 对我们的提高很有帮助。 </p>
-
-<p>我毕业后的第一天， 我就去面试了。 才真正懂了什么才是正确的面试， 不是吹嘘， 不是夸大， 而是认真的告诉对方， 我能为公司做什么， 我自己就很清楚自己的价值，当我给对方介绍了一下， 我在领航所学的项目， 我会的技术的时候， 对方很承认。 第二天就发给我exclusive offer， 也不让我再去其它家面试了。 感觉收到这样的待遇， 我引以为傲。 </p>
-
-<p>现在我确定在悉尼工作了， 虽然没有年薪过7万， 但我也觉得只要保持着这样的情绪继续学下去， 那个梦想不会是问题。 </p>
-
-<p>我特别感谢领航的老师们， 让我学到了一种心无旁骛的学习态度。 在这种心情下， 效率倍增。 我感谢领航， 给了这个机会， 让我变成了我想成为的人。 
-
-
-
-
-
-</p>
-                
-              </div>
-    
+                <!-- Post Content -->
+                <div class="col-lg-12 padding-bottom">
+                    <h1>领航教给我怎样才算奋斗</h1>
+                    <div class="row">
+                        <div class="col-md-9">
+                            <p>很多人问我， 领航哪点吸引我。 我会说， 在那段日子里， 当所有机会对你say no， 但是坚信领航能帮助我找到出路， 所有的人都为了一个梦想， 付出行动。 那种感觉特别带劲。 也另我着迷。 </p>
+                            <p>我想参加领航是因为教课的老师， 我之前搜索到他的讲课内容， 那个时候我已经工作了，偶尔下班之后看看他的材料， 他都或多或少帮助我解决工作中遇到的问题。 就感觉还没进入领航， 就已经觉得这个老师对我帮助很大。 </p>
+                            <p>上班时间紧，根本没有时间学习， 也特别懈怠， 然后就喜欢看老师的材料， 网站， 看其它人的评论， 每次看完， 都像打鸡血一样， 充满战斗力。 真的是我吸取能量的地方。 </p>
+                            <p>所以我就辞职了， 毅然参加领航。 想为自己的将来找一个更好的出路。 提高自己的技术。 也许也只有工作了之后， 才真正知道自己需要什么， 想获得什么。 </p>
+                            <p>进了领航， 我每天特别开心。 感觉花的钱也特别值得。 老师对待学生特别有耐心， 肯教。 并且老师自己技术够硬， 他们自己都是大公司里面的IT技术人员。 再有就是学生， 积极向上，都肯吃苦。 不过领航真的会把上课不认真的同学劝退。</p>
+                            <p>我特别喜欢这里的老师， 他们很抓学生上课的感觉， 如果大家懈怠， 老师会停下来， 给大家讲讲幽默的故事， 调节一下气氛， 保证每个人都知道自己正在做的事情。 也可能是我的偶像， 所以有点偏袒。 但是其他人也有同感， 老师很负责任。 每天都会让我们自己给自己定计划， 写进度。 并且善良的张老师， 课后tutorial都是陪着我们一起学， 不懂的就问他。 解决了很多当下不懂的难题。 对我们的提高很有帮助。 </p>
+                            <p>我毕业后的第一天， 我就去面试了。 才真正懂了什么才是正确的面试， 不是吹嘘， 不是夸大， 而是认真的告诉对方， 我能为公司做什么， 我自己就很清楚自己的价值，当我给对方介绍了一下， 我在领航所学的项目， 我会的技术的时候， 对方很承认。 第二天就发给我exclusive offer， 也不让我再去其它家面试了。 感觉收到这样的待遇， 我引以为傲。 </p>
+                            <p>现在我确定在悉尼工作了， 虽然没有年薪过7万， 但我也觉得只要保持着这样的情绪继续学下去， 那个梦想不会是问题。 </p>
+                            <p>我特别感谢领航的老师们， 让我学到了一种心无旁骛的学习态度。 在这种心情下， 效率倍增。 我感谢领航， 给了这个机会， 让我变成了我想成为的人。
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
-           
-          </div>
         </div>
-      </div>
-    </section><!-- Single Post End -->
-
+    </section>
+    <!-- Single Post End -->
     <!-- Footer -->
-    
-    
     <!-- Javascript (jQuery) Libraries and Plugins -->
     <script src="js/libs/jquery-2.1.3.min.js"></script>
     <script src="js/libs/jquery.easing.1.3.js"></script>
@@ -250,6 +145,7 @@
     <script src="js/plugins/form-plugins.js"></script>
     <script src="js/plugins/jquery.mCustomScrollbar.min.js"></script>
     <script src="js/scripts.js"></script>
+</body>
+<!-- Body End-->
 
-  </body><!-- Body End-->
 </html>
