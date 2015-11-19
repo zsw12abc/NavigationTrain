@@ -2870,9 +2870,9 @@ label.hover {
 }
 .feature-tabs .tabs {
 	float: left;
-	width: 43.6%;
+	width: 50%;
 	max-width: 550px;
-	padding-left: 7%;
+	padding-left: 5%;
 	margin-top: 80px;
 }
 .feature-tabs .devices img {
